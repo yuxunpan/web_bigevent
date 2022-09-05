@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/user/user_pwd.css">
+</head>
+
+<body>
+    <!-- 卡片面板区域 -->
+    <div class="layui-card">
+        <div class="layui-card-header">重置密码</div>
+        <div class="layui-card-body">
+            <!-- 表单区域 -->
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><i style="color: red;" class="tubiao">*</i>原密码:</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="oldPwd" required lay-verify="required|pwd" placeholder=""
+                            autocomplete="off" class="layui-input" id="origin_pwd">
+                        <div id="eye_pwd">
+                            <span class="glyphicon glyphicon-eye-close" id="eye-close"></span>
+                            <span class="glyphicon glyphicon-eye-open" id="eye-open" aria-hidden="true"
+                                style="display: none;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><i style="color: red;" class="tubiao">*</i>新密码:</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="newPwd" required lay-verify="required|pwd|samePwd" placeholder=""
+                            autocomplete="off" class="layui-input" id="new_pwd">
+                        <div id="eye_npwd">
+                            <span class="glyphicon glyphicon-eye-close" id="eye-close_1"></span>
+                            <span class="glyphicon glyphicon-eye-open" id="eye-open_1" aria-hidden="true"
+                                style="display: none;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><i style="color: red;" class="tubiao">*</i>确认新密码:</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="rePwd" required lay-verify="required|rePwd|pwd" placeholder=""
+                            autocomplete="off" class="layui-input" id="confirm_pwd">
+                        <div id="eye_renpwd">
+                            <span class="glyphicon glyphicon-eye-close" id="eye-close_2"></span>
+                            <span class="glyphicon glyphicon-eye-open" id="eye-open_2" aria-hidden="true"
+                                style="display: none;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">修改密码</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/js/baseAPI.js"></script>
+    <script src="/assets/js/user/eye_change.js"></script>
+    <script src="/assets/js/user/user_pwd.js"></script>
+</body>
+
+</html>

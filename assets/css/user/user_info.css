@@ -1,0 +1,36 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F0F2F5;
+    padding: 15px;
+}
+
+.layui-card {
+    font-size: 12px !important;
+}
+
+.information {
+    font-size: 12px;
+}
+
+.layui-form {
+    width: 550px;
+}
+
+
+.tubiao {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.layui-input-block button {
+    font-size: 12px;
+}
+
+input.login_name {
+    cursor: not-allowed;
+}

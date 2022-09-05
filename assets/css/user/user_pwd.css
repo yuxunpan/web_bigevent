@@ -1,0 +1,56 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F0F2F5;
+    padding: 15px;
+}
+
+.layui-card {
+    font-size: 12px !important;
+}
+
+.layui-card-header {
+    font-size: 12px !important;
+}
+
+.information {
+    font-size: 12px;
+}
+
+.layui-form {
+    width: 550px;
+}
+
+
+.tubiao {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.layui-input-block button {
+    font-size: 12px;
+}
+
+.layui-form-label {
+    padding: 0 !important;
+    padding-top: 10px !important;
+}
+
+.layui-input-block {
+    position: relative;
+}
+
+#eye_pwd,
+#eye_npwd,
+#eye_renpwd {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+}
